@@ -15,8 +15,8 @@
 \autor{Leonardo de Paula Batista Benevides}
 \orientador{Waldemar Celes}
 \orientadorR{Celes, Waldemar} 
-%TODO: mudar o título
-\titulo{Random}
+%TODO: mudar o tï¿½tulo
+\titulo{Meu Projeto}
 %\subtitulo{Das hiperflorestas at\'{e} complexos celulares}
 \dia{21} \mes{Novembro} \ano{2012}
 
@@ -49,22 +49,22 @@
 
 %TODO:
 \chaves{%
-  \chave{Linguagem visual, Programação por usuários finais}%
+  \chave{Linguagem visual, Programaï¿½ï¿½o por usuï¿½rios finais}%
 }
 
 \resumo{
 Este documento apresenta os principais conceitos de
-um sistema de \script{} de uma aplicação
-voltada para o pós-processamento de simulações de reservatórios de petróleo
-e a proposta e implementação de uma ferramenta que disponibilze parte 
-dos recursos  obtidos a partir dos \emph{scripts} à usuários não programadores.
-A ferramenta implementada  é uma
-uma calculadora de propriedades que permite que o usuário gere novas 
-propriedades a partir de simples expressões aritméticas desenvolvidas em
-uma interface gráfica similar a uma calculadora comum. 
-Este documento também apresenta um breve resumo dos estudos feitos acerca
-de linguagens de programação visual e a proposta e início de implementação
-de uma linguagem de programação visual simplificada.
+um sistema de \script{} de uma aplicaï¿½ï¿½o
+voltada para o pï¿½s-processamento de simulaï¿½ï¿½es de reservatï¿½rios de petrï¿½leo
+e a proposta e implementaï¿½ï¿½o de uma ferramenta que disponibilze parte 
+dos recursos  obtidos a partir dos \emph{scripts} ï¿½ usuï¿½rios nï¿½o programadores.
+A ferramenta implementada  ï¿½ uma
+uma calculadora de propriedades que permite que o usuï¿½rio gere novas 
+propriedades a partir de simples expressï¿½es aritmï¿½ticas desenvolvidas em
+uma interface grï¿½fica similar a uma calculadora comum. 
+Este documento tambï¿½m apresenta um breve resumo dos estudos feitos acerca
+de linguagens de programaï¿½ï¿½o visual e a proposta e inï¿½cio de implementaï¿½ï¿½o
+de uma linguagem de programaï¿½ï¿½o visual simplificada.
 }
 
 
@@ -109,12 +109,12 @@ simplified visual programming language.
 
 \begin{document}
 
-\chapter{Introdução}
+\chapter{Introduï¿½ï¿½o}
 
 O \textbf{Geresim} \'{e} uma aplica\c{c}\~ao desenvolvida por meio de uma
 parceria firmada entre o \textbf{TeCGraf/PUC-Rio}
 e a \textbf{PETROBRAS (E\&P/ER)} com o intuito de melhorar o processo de modelagem do escoamento em meio 
-poroso em reservat\'{o}rios de petr\'{o}leo. Ele \'{e} constituí\'{i}o de um ambiente de trabalho que permite 
+poroso em reservat\'{o}rios de petr\'{o}leo. Ele \'{e} constituï¿½\'{i}o de um ambiente de trabalho que permite 
 construir, alterar, manter, importar e exportar modelos num\'{e}ricos para os principais simuladores 
 comerciais, tirando proveito de uma s\'{e}rie de facilidades voltadas para a agilidade e a efic\'{a}cia 
 da montagem dos modelos. Adicionalmente, o \textbf{Geresim} executa uma an\'{a}lise de consist\^{e}ncia que 
@@ -129,280 +129,280 @@ nas opera\c{c}\~{o}es com os dados.
 Esse acesso program\'{a}vel \'{e} feito atrav\'{e}s da linguagem de programa\c{c}\~{a}o \textbf{Lua} \cite{Ieru03}.
 
 %TODO : melhorar esse paragrafo
-%nocoes de orientaçao a objetos, iteradores de lua
-No entanto, como requer certo conhecimento de técnicas de programação do usuário e este na maioria das
-vezes tem pouca ou até mesmo nenhuma experiência como programador, 
+%nocoes de orientaï¿½ao a objetos, iteradores de lua
+No entanto, como requer certo conhecimento de tï¿½cnicas de programaï¿½ï¿½o do usuï¿½rio e este na maioria das
+vezes tem pouca ou atï¿½ mesmo nenhuma experiï¿½ncia como programador, 
 o sistema de \emph{scripts} muitas vezes 
-acaba sendo subutilizado e os que necessitam do mesmo acabam delegando aos próprios desenvolvedores 
-do software a implementação de novos \emph{scripts} de programação.
+acaba sendo subutilizado e os que necessitam do mesmo acabam delegando aos prï¿½prios desenvolvedores 
+do software a implementaï¿½ï¿½o de novos \emph{scripts} de programaï¿½ï¿½o.
 
-Nesse contexto, torna-se interessante e necessário (pois, foi sugerido pelo próprio cliente) o estudo
-de alternativas à programação textual % desenvolvimento de scripts através de mecanismos de programação visual
-que disponibilize ao usuário não programador pelo menos parte dos recursos do sistema de \emph{scripts}
+Nesse contexto, torna-se interessante e necessï¿½rio (pois, foi sugerido pelo prï¿½prio cliente) o estudo
+de alternativas ï¿½ programaï¿½ï¿½o textual % desenvolvimento de scripts atravï¿½s de mecanismos de programaï¿½ï¿½o visual
+que disponibilize ao usuï¿½rio nï¿½o programador pelo menos parte dos recursos do sistema de \emph{scripts}
 do \textbf{Geresim}.
-%O uso de programação visual tem se mostrado interessante em sistemas que apresentem um domínio
-%específico, como o descrito acima, pois é possível manter-se dentro do estilo de comunicação do
-%domínio utilizando artefatos visuais que reflitam necessidades particulares, diagramas e o
-%vocabulário específico do domínio sem nunca precisar deixar esse estilo de comunicação [GrPe96].
+%O uso de programaï¿½ï¿½o visual tem se mostrado interessante em sistemas que apresentem um domï¿½nio
+%especï¿½fico, como o descrito acima, pois ï¿½ possï¿½vel manter-se dentro do estilo de comunicaï¿½ï¿½o do
+%domï¿½nio utilizando artefatos visuais que reflitam necessidades particulares, diagramas e o
+%vocabulï¿½rio especï¿½fico do domï¿½nio sem nunca precisar deixar esse estilo de comunicaï¿½ï¿½o [GrPe96].
 %TODO : melhorar esse paragrafo
 Por isso, esse projeto teve como metas principais pesquisar e desenvolver ferramentas
 que cumpram esse objetivo.
 
-Este trabalho foi dividido da seguinte forma: a seção 2 apresenta de forma breve o atual sistema
-de script do \textbf{Geresim}; a seção 3 descreve a implementação e funcionamento de uma calculadora de 
-propriedades desenvolvida no projeto; a seção 4 apresenta um breve resumo dos estudos feitos
-acerca de lingugens de programação visual; a seção 5 apresenta  o início da 
-implementação de uma ferramenta de programação visual; a seção 6 apresenta algumas conclusões
+Este trabalho foi dividido da seguinte forma: a seï¿½ï¿½o 2 apresenta de forma breve o atual sistema
+de script do \textbf{Geresim}; a seï¿½ï¿½o 3 descreve a implementaï¿½ï¿½o e funcionamento de uma calculadora de 
+propriedades desenvolvida no projeto; a seï¿½ï¿½o 4 apresenta um breve resumo dos estudos feitos
+acerca de lingugens de programaï¿½ï¿½o visual; a seï¿½ï¿½o 5 apresenta  o inï¿½cio da 
+implementaï¿½ï¿½o de uma ferramenta de programaï¿½ï¿½o visual; a seï¿½ï¿½o 6 apresenta algumas conclusï¿½es
 e propostas de trabalhos futuros.
 
 
 \chapter{O sistema de Scripts}
 
-O sistema de \emph{scripts} do \textbf{Geresim} possibilita acesso programável aos dados dos 
-modelos de reservatório visualizados. Esse acesso programável é feito através da 
-linguagem de programação \textbf{Lua}. Por isso o sistema disponibiliza diversos recursos
-de programação sendo possível a implementação de \emph{scripts} diversos que podem
-acessar todos os dados dos modelos de reservatório.
+O sistema de \emph{scripts} do \textbf{Geresim} possibilita acesso programï¿½vel aos dados dos 
+modelos de reservatï¿½rio visualizados. Esse acesso programï¿½vel ï¿½ feito atravï¿½s da 
+linguagem de programaï¿½ï¿½o \textbf{Lua}. Por isso o sistema disponibiliza diversos recursos
+de programaï¿½ï¿½o sendo possï¿½vel a implementaï¿½ï¿½o de \emph{scripts} diversos que podem
+acessar todos os dados dos modelos de reservatï¿½rio.
 
-Assim é possível gerear dados de forma procedimental, como cirar novos
+Assim ï¿½ possï¿½vel gerear dados de forma procedimental, como cirar novos
 modelos e novos dados a serem associados a modelos, manipular dados de forma 
-flexível, como usá-los como operandos de diversas operações sem muitas restrições
-e criar \emph{scripts} temporários. Por isso o sistema pode funcionar como uma máquina
-de calcular que opera com os dados dos modelos, recurso que será mais discutido
-na seção 3.
+flexï¿½vel, como usï¿½-los como operandos de diversas operaï¿½ï¿½es sem muitas restriï¿½ï¿½es
+e criar \emph{scripts} temporï¿½rios. Por isso o sistema pode funcionar como uma mï¿½quina
+de calcular que opera com os dados dos modelos, recurso que serï¿½ mais discutido
+na seï¿½ï¿½o 3.
 
-Nessas seção será feita uma rápida descrição da linguagem de programação \textbf{Lua} e 
-uma apresentação do funcionamento do sistema de \script{} do \textbf{Geresim}.
+Nessas seï¿½ï¿½o serï¿½ feita uma rï¿½pida descriï¿½ï¿½o da linguagem de programaï¿½ï¿½o \textbf{Lua} e 
+uma apresentaï¿½ï¿½o do funcionamento do sistema de \script{} do \textbf{Geresim}.
 
 \section{Lua}
 
 
-\textbf{Lua} é uma linguagem de programação poderosa, rápida e leve, projetada justamente para estender aplicações.
-Combina sintaxe simples para programação procedural com poderosas construções para descrição de dados 
-baseadas em tabelas associativas e semântica extensível. \textbf{Lua} é tipada dinamicamente, é interpretada a 
-partir de bytecodes para uma máquina virtual baseada em registradores, e tem gerenciamento automático 
-de memória com coleta de lixo incremental. Essas características fazem de \textbf{Lua} uma linguagem ideal 
-para configuração, automação (\emph{scripting}) e prototipagem rápida. A linguagem
-é usada em muitas aplicações
-industriais, com ênfase em sistemas embutidos e jogos, onde é atualmente a linguagem de
-\script{} mais usada. \textbf{Lua} tem uma merecida reputação de ótimo desempenho, em vários benchmarks 
-aparece como a linguagem mais rápida dentre as linguagens de \script{} interpretadas.
+\textbf{Lua} ï¿½ uma linguagem de programaï¿½ï¿½o poderosa, rï¿½pida e leve, projetada justamente para estender aplicaï¿½ï¿½es.
+Combina sintaxe simples para programaï¿½ï¿½o procedural com poderosas construï¿½ï¿½es para descriï¿½ï¿½o de dados 
+baseadas em tabelas associativas e semï¿½ntica extensï¿½vel. \textbf{Lua} ï¿½ tipada dinamicamente, ï¿½ interpretada a 
+partir de bytecodes para uma mï¿½quina virtual baseada em registradores, e tem gerenciamento automï¿½tico 
+de memï¿½ria com coleta de lixo incremental. Essas caracterï¿½sticas fazem de \textbf{Lua} uma linguagem ideal 
+para configuraï¿½ï¿½o, automaï¿½ï¿½o (\emph{scripting}) e prototipagem rï¿½pida. A linguagem
+ï¿½ usada em muitas aplicaï¿½ï¿½es
+industriais, com ï¿½nfase em sistemas embutidos e jogos, onde ï¿½ atualmente a linguagem de
+\script{} mais usada. \textbf{Lua} tem uma merecida reputaï¿½ï¿½o de ï¿½timo desempenho, em vï¿½rios benchmarks 
+aparece como a linguagem mais rï¿½pida dentre as linguagens de \script{} interpretadas.
 \cite{Lua}
 
-Mais do que apenas estender aplicações, \textbf{Lua}
-também suporta uma abordagem de desenvolvimento de software 
-baseada em componentes, onde é possível criar aplicações
-juntando componentes de alto-nível pré-existentes.
-Normalmente esses componentes são escritos em linguagens 
+Mais do que apenas estender aplicaï¿½ï¿½es, \textbf{Lua}
+tambï¿½m suporta uma abordagem de desenvolvimento de software 
+baseada em componentes, onde ï¿½ possï¿½vel criar aplicaï¿½ï¿½es
+juntando componentes de alto-nï¿½vel prï¿½-existentes.
+Normalmente esses componentes sï¿½o escritos em linguagens 
 compiladas e estaticamente tipadas como \textbf{C} ou \textbf{C}++.
 Assim, \textbf{Lua} pode ser usada conectar tais componentes, 
 que normalmente representam conceitos mais concretos
-e de baixo nível (como por exemplo estruturas de dados) que não estão sujeitos a muitas alterações
+e de baixo nï¿½vel (como por exemplo estruturas de dados) que nï¿½o estï¿½o sujeitos a muitas alteraï¿½ï¿½es
 durante o desenvolvimento do programa e normalmente exigem um maior poder de processamento.
 \cite{Ieru03}
 
-%talvez falar mais sobre os recurso e estilo de programação, meta-mecanismos e tabelas
+%talvez falar mais sobre os recurso e estilo de programaï¿½ï¿½o, meta-mecanismos e tabelas
 
 %\newpage
 
 %More than being an extensible language, Lua is also a glue language. Lua supports a component-based approach to software development, where we create an application by gluing together existing high-level components. Usually, these components are written in a compiled, statically typed language, such as C or C++; Lua is the glue that we use to compose and connect those components. Usually, the components (or objects) represent more concrete, low-level concepts (such as widgets and data structures) that are not subject to many changes during program development and that take the bulk of the CPU time of the final program. Lua gives the final shape of the application, which will probably change a lot during the life cycle of the product. However, unlike other glue technologies, Lua is a full-fledged language as well. Therefore, we can use Lua not only to glue components, but also to adapt and reshape them, or even to create whole new components. 
 
-\section{Conceitos básicos do sistema de Script}
+\section{Conceitos bï¿½sicos do sistema de Script}
 
-O sistema de macros do \textbf{Geresim} provê acesso a diversos objetos que 
+O sistema de macros do \textbf{Geresim} provï¿½ acesso a diversos objetos que 
 representam o modelo e seus dados. Para cada objeto, tem-se acesso a suas 
-informações e a um conjunto de métodos que permitem a 
-manipulação alteração das informações associadas. Os objetos a que se tem 
-acesso no sistema de macros são: 
+informaï¿½ï¿½es e a um conjunto de mï¿½todos que permitem a 
+manipulaï¿½ï¿½o alteraï¿½ï¿½o das informaï¿½ï¿½es associadas. Os objetos a que se tem 
+acesso no sistema de macros sï¿½o: 
 
 \begin{itemize}
   \item \textbf{Model:} 
-  objeto que representa um modelo de reservatório;
+  objeto que representa um modelo de reservatï¿½rio;
   \item \textbf{Field:} 
   objeto que representa um campo do modelo;
   \item \textbf{Region:} 
-  objeto que representa uma região do modelo;
+  objeto que representa uma regiï¿½o do modelo;
   \item \textbf{Well:} 
-  objeto que representa um poço do modelo;
+  objeto que representa um poï¿½o do modelo;
   \item \textbf{Completion:} 
-  objeto que representa uma completação de um poço do modelo;
+  objeto que representa uma completaï¿½ï¿½o de um poï¿½o do modelo;
   \item \textbf{Data:}
   objeto que representa um conjinto de valores de propriedades, podendo ser
   dos seguintes tipos:
   \begin{itemize}
     \item \textbf{MapProp:}
     propriedade de mapa, representada por um vetor de 
-    dados de dimensão 4: ni x nj x nk x número de timesteps\footnote{explicação de timestep} de mapa; 
+    dados de dimensï¿½o 4: ni x nj x nk x nï¿½mero de timesteps\footnote{explicaï¿½ï¿½o de timestep} de mapa; 
     \item \textbf{FieldProp:}
     propriedade de campo, representada por um vetor de 
-    dados de dimensão 1: número de timesteps de poço; 
+    dados de dimensï¿½o 1: nï¿½mero de timesteps de poï¿½o; 
     \item \textbf{RegionProp:}
-    propriedade de região, representada por um vetor de 
-    dados de dimensão 2: número de regiões x número de timesteps de 
-    poço;  
+    propriedade de regiï¿½o, representada por um vetor de 
+    dados de dimensï¿½o 2: nï¿½mero de regiï¿½es x nï¿½mero de timesteps de 
+    poï¿½o;  
     \item \textbf{GroupProp:}
     propriedade de grupo, representada por um vetor de 
-    dados de dimensão 2: número de grupos x número de timesteps de 
-    poço;  
+    dados de dimensï¿½o 2: nï¿½mero de grupos x nï¿½mero de timesteps de 
+    poï¿½o;  
     \item \textbf{WellProp:}
-    propriedade de poço, representada por um vetor de 
-    dados de dimensão 2: número de poços x número de timesteps de 
-    poço; 
+    propriedade de poï¿½o, representada por um vetor de 
+    dados de dimensï¿½o 2: nï¿½mero de poï¿½os x nï¿½mero de timesteps de 
+    poï¿½o; 
     \item \textbf{CompProp:}
-    propriedade de completação, representada por um 
-    vetor de dados de dimensão 3: número de poços x número de 
-    máximo de completações por poço x número de timesteps de poço;
+    propriedade de completaï¿½ï¿½o, representada por um 
+    vetor de dados de dimensï¿½o 3: nï¿½mero de poï¿½os x nï¿½mero de 
+    mï¿½ximo de completaï¿½ï¿½es por poï¿½o x nï¿½mero de timesteps de poï¿½o;
     \item \textbf{ExtraProp:}
     propriedade avulsa, representada por um vetor de 
-    dados de dimensão 1: número de timesteps de poço;
+    dados de dimensï¿½o 1: nï¿½mero de timesteps de poï¿½o;
   \end{itemize}
   \item \textbf{Slice:}
-  referência para uma ``fatia'' de um determinado conjunto de dados.
+  referï¿½ncia para uma ``fatia'' de um determinado conjunto de dados.
 \end{itemize}
 
-Pode-se ainda criar referências para outras porções de um dado. Por exemplo, é 
-válido criar uma referência para um mapa associado a um determinado timestep.
+Pode-se ainda criar referï¿½ncias para outras porï¿½ï¿½es de um dado. Por exemplo, ï¿½ 
+vï¿½lido criar uma referï¿½ncia para um mapa associado a um determinado timestep.
 
 %TODO: melhorar esse paragrafo
 Existem dois tipos de vetores de dados: dados originais associados ao modelo e 
 dados criados dinamicamente pelo sistema de \script{}. Os dados originais podem 
-ser consultados, mas não podem ser alterados. Já os dados criados 
-dinamicamente podem ser livremente alterados. Analogamente, referências a 
-dados originais não são editáveis, enquanto que referências a dados criados 
-dinamicamente são editáveis (na verdade, altera-se o vetor de dados 
+ser consultados, mas nï¿½o podem ser alterados. Jï¿½ os dados criados 
+dinamicamente podem ser livremente alterados. Analogamente, referï¿½ncias a 
+dados originais nï¿½o sï¿½o editï¿½veis, enquanto que referï¿½ncias a dados criados 
+dinamicamente sï¿½o editï¿½veis (na verdade, altera-se o vetor de dados 
 referenciado). 
 
-Logicamente, o programa de \script{} pode também incluir a manipulação de 
+Logicamente, o programa de \script{} pode tambï¿½m incluir a manipulaï¿½ï¿½o de 
 valores dos tipos existentes em \textbf{Lua}: booleanos, valores escalares, cadeias de 
 caracteres (\emph{string}), entre outros. 
 
-\section{Acesso e criação de dados}
+\section{Acesso e criaï¿½ï¿½o de dados}
 
 %TODO: melhorar esse paragrafo
-O objeto \emph{Model} representa um resultado de simulação, com suas propriedades 
-de mapa e de poço. A função que implementa o \script{} recebe um ou mais 
-modelos como parâmetro de entrada e a partir desses objetos \emph{Model}, tem-se acesso 
-a seus atributos e seus métodos.
+O objeto \emph{Model} representa um resultado de simulaï¿½ï¿½o, com suas propriedades 
+de mapa e de poï¿½o. A funï¿½ï¿½o que implementa o \script{} recebe um ou mais 
+modelos como parï¿½metro de entrada e a partir desses objetos \emph{Model}, tem-se acesso 
+a seus atributos e seus mï¿½todos.
 
-É através dos atributos de um objeto \emph{Model} que se dá o acesso programável aos dados
-dos modelos de reservatório. Esses dados não podem ser alterados no \script, é possível apenas
-consulta-los e usar os valores retornados. Assim é possível acessar dados de geometria,
-como o número de células nas direções I, J ou K, acessar dados relacionados a timesteps,
-acessar dados relacionados aos demais objetos do modelo, como o número de poços ou
-de regiões, acessar os próprios objetos e também a todas as propriedades do modelo.
+ï¿½ atravï¿½s dos atributos de um objeto \emph{Model} que se dï¿½ o acesso programï¿½vel aos dados
+dos modelos de reservatï¿½rio. Esses dados nï¿½o podem ser alterados no \script, ï¿½ possï¿½vel apenas
+consulta-los e usar os valores retornados. Assim ï¿½ possï¿½vel acessar dados de geometria,
+como o nï¿½mero de cï¿½lulas nas direï¿½ï¿½es I, J ou K, acessar dados relacionados a timesteps,
+acessar dados relacionados aos demais objetos do modelo, como o nï¿½mero de poï¿½os ou
+de regiï¿½es, acessar os prï¿½prios objetos e tambï¿½m a todas as propriedades do modelo.
 
-Como dito acima, o objeto \emph{Model} também provê um conjunto de métodos
-que possibilitam o acesso à estrutura do reservatório, a criação de novos 
-modelos, criação de novos vetores de propriedade, verificar a existência
+Como dito acima, o objeto \emph{Model} tambï¿½m provï¿½ um conjunto de mï¿½todos
+que possibilitam o acesso ï¿½ estrutura do reservatï¿½rio, a criaï¿½ï¿½o de novos 
+modelos, criaï¿½ï¿½o de novos vetores de propriedade, verificar a existï¿½ncia
 de timesteps e propriedades e associar os novos dados vetoriais criados
 durante o \script{} aos modelos.
 
 \section{Vetores de dados de propriedades}
 
-Como visto anteriormente, os valores das propriedades são representados em vetores de dados. 
-Vetores de propriedade de mapa, por exemplo, têm dimensão 4 (ni x nj x nk x número de timesteps de 
-mapa) e só podem ser usados em operações com outros vetores de mapa de 
-mesmas dimensões. É permitida a criação de ``fatias'' (\emph{slices}) que fazem 
-referência a uma parte de um vetor 4D, ou seja, pode-se representar uma 
-propriedade de uma camada de um reservatório através de uma referência ao 
-vetor 4D, onde a terceira dimensão é fixada.
+Como visto anteriormente, os valores das propriedades sï¿½o representados em vetores de dados. 
+Vetores de propriedade de mapa, por exemplo, tï¿½m dimensï¿½o 4 (ni x nj x nk x nï¿½mero de timesteps de 
+mapa) e sï¿½ podem ser usados em operaï¿½ï¿½es com outros vetores de mapa de 
+mesmas dimensï¿½es. ï¿½ permitida a criaï¿½ï¿½o de ``fatias'' (\emph{slices}) que fazem 
+referï¿½ncia a uma parte de um vetor 4D, ou seja, pode-se representar uma 
+propriedade de uma camada de um reservatï¿½rio atravï¿½s de uma referï¿½ncia ao 
+vetor 4D, onde a terceira dimensï¿½o ï¿½ fixada.
 
-As dimensões de uma fatia que representa uma camada são: ni x nj x 1 x número 
-de timesteps de mapa. Conceitualmente, uma camada é um vetor 3D, já que o 
-índice k não varia. No entanto, internamente, ela é representada por um vetor 
-4D, como se os valores associados à camada em questão fossem replicados para 
-as demais camadas do grid. Desta forma, pode-se fazer operações entre um grid 
-e uma camada específica. Generalizando, pode-se fazer operações entre vetores 
-e fatias de vetores de mesmas dimensões. Também é possível associar uma fatia 
-a um modelo, para ser visualizada através da interface gráfica. Neste caso, os 
-valores são replicados ao longo das dimensões fixadas.
+As dimensï¿½es de uma fatia que representa uma camada sï¿½o: ni x nj x 1 x nï¿½mero 
+de timesteps de mapa. Conceitualmente, uma camada ï¿½ um vetor 3D, jï¿½ que o 
+ï¿½ndice k nï¿½o varia. No entanto, internamente, ela ï¿½ representada por um vetor 
+4D, como se os valores associados ï¿½ camada em questï¿½o fossem replicados para 
+as demais camadas do grid. Desta forma, pode-se fazer operaï¿½ï¿½es entre um grid 
+e uma camada especï¿½fica. Generalizando, pode-se fazer operaï¿½ï¿½es entre vetores 
+e fatias de vetores de mesmas dimensï¿½es. Tambï¿½m ï¿½ possï¿½vel associar uma fatia 
+a um modelo, para ser visualizada atravï¿½s da interface grï¿½fica. Neste caso, os 
+valores sï¿½o replicados ao longo das dimensï¿½es fixadas.
 
-Conceitualmente, uma propriedade de campo é um vetor 1D (número de 
-timesteps), uma propriedade de região é um vetor 2D (número de regiões x 
-número de timesteps), uma propriedade de grupo é um vetor 2D (número de 
-grupos x número de timesteps), uma propriedade de poço é um vetor 2D 
-(número de poços x número de timesteps), e uma propriedade de completação é 
-um vetor 3D (número de poços x número de completações x número de 
+Conceitualmente, uma propriedade de campo ï¿½ um vetor 1D (nï¿½mero de 
+timesteps), uma propriedade de regiï¿½o ï¿½ um vetor 2D (nï¿½mero de regiï¿½es x 
+nï¿½mero de timesteps), uma propriedade de grupo ï¿½ um vetor 2D (nï¿½mero de 
+grupos x nï¿½mero de timesteps), uma propriedade de poï¿½o ï¿½ um vetor 2D 
+(nï¿½mero de poï¿½os x nï¿½mero de timesteps), e uma propriedade de completaï¿½ï¿½o ï¿½ 
+um vetor 3D (nï¿½mero de poï¿½os x nï¿½mero de completaï¿½ï¿½es x nï¿½mero de 
 timesteps).
 
-Em todas as operações que envolvem dois vetores de dados como operandos, a 
-operação só é possível se os timesteps associados aos vetores forem compatíveis. 
-O primeiro operando é usado com referência na operação. Para cada timestep 
+Em todas as operaï¿½ï¿½es que envolvem dois vetores de dados como operandos, a 
+operaï¿½ï¿½o sï¿½ ï¿½ possï¿½vel se os timesteps associados aos vetores forem compatï¿½veis. 
+O primeiro operando ï¿½ usado com referï¿½ncia na operaï¿½ï¿½o. Para cada timestep 
 existente no primeiro operando, deve haver um timestep correspondente no 
-segundo operando. A correspondência entre timesteps é feita buscando-se a 
-ocorrência entre datas próximas, dentro de uma determinada tolerância, que pode
-ser configurada pelo programador. Se a operação entre dois vetores não puder ser
+segundo operando. A correspondï¿½ncia entre timesteps ï¿½ feita buscando-se a 
+ocorrï¿½ncia entre datas prï¿½ximas, dentro de uma determinada tolerï¿½ncia, que pode
+ser configurada pelo programador. Se a operaï¿½ï¿½o entre dois vetores nï¿½o puder ser
 realizada, o sistema reporta uma mensagem de erro. 
 De posse de um vetor de dados, pode-se fazer diversas 
-operações e invocar diversos métodos associados.
-É possível realizar as operações aritméticas 
-\footnote{Também é possível realizar operações aritméticas entre vetores
+operaï¿½ï¿½es e invocar diversos mï¿½todos associados.
+ï¿½ possï¿½vel realizar as operaï¿½ï¿½es aritmï¿½ticas 
+\footnote{Tambï¿½m ï¿½ possï¿½vel realizar operaï¿½ï¿½es aritmï¿½ticas entre vetores
 de propriedades e valores escalares.}
-de soma, subtração, multiplicação, divisão e potenciação.
-Essas operações resultam em um novo vetor de dados, de mesmas
-dimensões, onde cada valor representa a operaçãoaplicada aos
+de soma, subtraï¿½ï¿½o, multiplicaï¿½ï¿½o, divisï¿½o e potenciaï¿½ï¿½o.
+Essas operaï¿½ï¿½es resultam em um novo vetor de dados, de mesmas
+dimensï¿½es, onde cada valor representa a operaï¿½ï¿½oaplicada aos
 valores associados aos vetores fornecidos.\cite{Tecg06}
 
-Estão disponíveis também operadores relacionais e lógicos 
-e alguns métodos de manipulação de valores.
+Estï¿½o disponï¿½veis tambï¿½m operadores relacionais e lï¿½gicos 
+e alguns mï¿½todos de manipulaï¿½ï¿½o de valores.
 
 %Escrever sobre o atual sistema de script. \cite{Tecg06}
 
 \chapter{Calculadora de propriedades}
 
-Como visto anteriormente, um recurso interessante do sistema de \script{} é 
-a possibilidade de usá-lo como uma espécie de máquina de calcular que opera
-sobre os dados de modelos de reservatórios. Sendo assim, a primeira solução
-encontrada para resolver o problema apresentado na introdução, oferecer
-parte dos recursos do sistema de \script{} para o usuário não programador,
+Como visto anteriormente, um recurso interessante do sistema de \script{} ï¿½ 
+a possibilidade de usï¿½-lo como uma espï¿½cie de mï¿½quina de calcular que opera
+sobre os dados de modelos de reservatï¿½rios. Sendo assim, a primeira soluï¿½ï¿½o
+encontrada para resolver o problema apresentado na introduï¿½ï¿½o, oferecer
+parte dos recursos do sistema de \script{} para o usuï¿½rio nï¿½o programador,
 foi implementar justamente uma calculadora de propriedades onde o resultado
-das operações fossem propriedades que pudessem ser posteriormente visualizadas pelo
-usuário. Sendo assim, a ferramenta proposta deveria ter uma interface gráfica
-na forma de uma calculadora e gerar um código compatível com o sistema
+das operaï¿½ï¿½es fossem propriedades que pudessem ser posteriormente visualizadas pelo
+usuï¿½rio. Sendo assim, a ferramenta proposta deveria ter uma interface grï¿½fica
+na forma de uma calculadora e gerar um cï¿½digo compatï¿½vel com o sistema
 de \script{} e que obviamente resultasse na propriedade desejada pelo
-usuário.
+usuï¿½rio.
 
-\section{Sintaxe das expressões}
+\section{Sintaxe das expressï¿½es}
 
 Inicialmente a calculadora foi pensada para funcionar apenas para propriedades de
-mapa. As propriedades de mapa são valores associados às células do modelos, por
-isso o acesso aos dados dessas propriedades é sempre independente dos demais
-objetos vistos na seção 2.2. Portanto, a sintaxe das expressões deveria ser
-a sintaxe comum de expressões aritméticas levemente modificada para atender três
+mapa. As propriedades de mapa sï¿½o valores associados ï¿½s cï¿½lulas do modelos, por
+isso o acesso aos dados dessas propriedades ï¿½ sempre independente dos demais
+objetos vistos na seï¿½ï¿½o 2.2. Portanto, a sintaxe das expressï¿½es deveria ser
+a sintaxe comum de expressï¿½es aritmï¿½ticas levemente modificada para atender trï¿½s
 requisitos: 
 
 \begin{enumerate}
-  \item Possibilitar o uso não somente de propriedades mas também de ``fatias'' 
+  \item Possibilitar o uso nï¿½o somente de propriedades mas tambï¿½m de ``fatias'' 
   de propriedades com o timestep fixado.
-  \item Permitir o uso de funções, para incluir outras funcionalidades do sistema
+  \item Permitir o uso de funï¿½ï¿½es, para incluir outras funcionalidades do sistema
   de \script{}.
-  \item Ser compatível com \textbf{Lua}, para facilitar a implementação.
+  \item Ser compatï¿½vel com \textbf{Lua}, para facilitar a implementaï¿½ï¿½o.
 \end{enumerate}
 
-As ``fatias'' foram incluidas da seguinte forma: uma fatia é o nome de propriedade
+As ``fatias'' foram incluidas da seguinte forma: uma fatia ï¿½ o nome de propriedade
 (identificador) seguido de uma data entre aspas, como por exemplo:
  SO``10/10/2010''.
-Em \textbf{Lua}, essa expressão é encarada como uma chamada de função.
+Em \textbf{Lua}, essa expressï¿½o ï¿½ encarada como uma chamada de funï¿½ï¿½o.
 
-Posteriormente, foram  incluídas na calculadora também propriedades de campo,
-região, grupo e poço. No caso de tais propriedades, abriu-se a possibilidade de incluir
-também os respectivos elementos nas expressõs. Dessa manera, a fatia da propriedade associada
-a um elemento (grupo, região ou poço) seria referenciada da seguinte maneira: nome
+Posteriormente, foram  incluï¿½das na calculadora tambï¿½m propriedades de campo,
+regiï¿½o, grupo e poï¿½o. No caso de tais propriedades, abriu-se a possibilidade de incluir
+tambï¿½m os respectivos elementos nas expressï¿½s. Dessa manera, a fatia da propriedade associada
+a um elemento (grupo, regiï¿½o ou poï¿½o) seria referenciada da seguinte maneira: nome
 do elemento seguido do nome da propriedade entre colchetes, como por exemplo:
-WELL[BHP]. Isso indicaria a fatia da propriedade BHP associada ao poço WELL.
-Em \textbf{Lua}, essa ecpressão é encarada como uma indexação de uma tabela.
+WELL[BHP]. Isso indicaria a fatia da propriedade BHP associada ao poï¿½o WELL.
+Em \textbf{Lua}, essa ecpressï¿½o ï¿½ encarada como uma indexaï¿½ï¿½o de uma tabela.
 
-\section{Implementação}
+\section{Implementaï¿½ï¿½o}
 
-A calculadora foi implementada na linguagem de programação \textbf{Lua} e a interface gráfica
-foi implementada utilizando o toolkit para construção de interfaces gráficas IUP.
+A calculadora foi implementada na linguagem de programaï¿½ï¿½o \textbf{Lua} e a interface grï¿½fica
+foi implementada utilizando o toolkit para construï¿½ï¿½o de interfaces grï¿½ficas IUP.
 \cite{IUP}
-A implementação foi dividida em três módulos: Calculator.lua, que implementa a interface
-gráfica e controla a entrada de dados do usuário, CalcComp.lua, responsável pela geração
-de código e validação das expressões e por último CalcLib.lua, que implementa algumas funções para
-serem incluidas no sistema de \script{} que garantem o funcionamento do código gerado.
+A implementaï¿½ï¿½o foi dividida em trï¿½s mï¿½dulos: Calculator.lua, que implementa a interface
+grï¿½fica e controla a entrada de dados do usuï¿½rio, CalcComp.lua, responsï¿½vel pela geraï¿½ï¿½o
+de cï¿½digo e validaï¿½ï¿½o das expressï¿½es e por ï¿½ltimo CalcLib.lua, que implementa algumas funï¿½ï¿½es para
+serem incluidas no sistema de \script{} que garantem o funcionamento do cï¿½digo gerado.
 
-\subsection{Módulo Calculator.lua}
+\subsection{Mï¿½dulo Calculator.lua}
 
     \begin{figure}[!htb]
     %\begin{figure}
@@ -412,77 +412,77 @@ serem incluidas no sistema de \script{} que garantem o funcionamento do código g
       \label{interface}
     \end{figure}
 
-A interface é composta pelos seguintes campos: 
+A interface ï¿½ composta pelos seguintes campos: 
 \begin{itemize}
-  \item Um campo de texto onde é possível entrar o nome da nova propriedade,
-  caso não seja especificado um nome, é usado a própria expressão como nome.
-  \item Lista que indica o tipo de propriedade que será calculada, atualmente
-  os tipos suportaqdos são propriedade de mapa, campo, região e poço.
-  \item Um toggle %TODO: achar uma traduçao para isso
-  e a lista de elementos, que é preencida de acordo com o valor da lista de tipos,
-  se o tipo for mapa, esses dois controles não são habilitados, pois não se aplicam
+  \item Um campo de texto onde ï¿½ possï¿½vel entrar o nome da nova propriedade,
+  caso nï¿½o seja especificado um nome, ï¿½ usado a prï¿½pria expressï¿½o como nome.
+  \item Lista que indica o tipo de propriedade que serï¿½ calculada, atualmente
+  os tipos suportaqdos sï¿½o propriedade de mapa, campo, regiï¿½o e poï¿½o.
+  \item Um toggle %TODO: achar uma traduï¿½ao para isso
+  e a lista de elementos, que ï¿½ preencida de acordo com o valor da lista de tipos,
+  se o tipo for mapa, esses dois controles nï¿½o sï¿½o habilitados, pois nï¿½o se aplicam
   a propriedades destes tipos.
-  \item Lista de propriedades, que é preenchida de acordo com o valor da lista de tipos.
-  \item Um toggle e lista de timesteps, que é preenchida de acordo com o valor da lista de tipos.
-  \item Botão de inserir propriedade.
-  \item ``Teclado'' formado por botões que disponibilizam os números, os operadores e algumas
-  funções para o usuário.
-  \item Um campo de texto onde pode-se visualizar a expressão.
-  \item Botões de calcular e limpar expressão.
+  \item Lista de propriedades, que ï¿½ preenchida de acordo com o valor da lista de tipos.
+  \item Um toggle e lista de timesteps, que ï¿½ preenchida de acordo com o valor da lista de tipos.
+  \item Botï¿½o de inserir propriedade.
+  \item ``Teclado'' formado por botï¿½es que disponibilizam os nï¿½meros, os operadores e algumas
+  funï¿½ï¿½es para o usuï¿½rio.
+  \item Um campo de texto onde pode-se visualizar a expressï¿½o.
+  \item Botï¿½es de calcular e limpar expressï¿½o.
 \end{itemize}
 
-A interface funciona da seguinte forma: o usuário pode entrar números e operadores ou movimentar
-o cursor livremente através de seu teclado ou clicando no teclado virtual da interface.
-Já a entrada de variáveis(propriedades) e funções só pode ser feita através da interface gráfica.
-O objetivo disso é evitar a geração de códigos inconsistentes.
+A interface funciona da seguinte forma: o usuï¿½rio pode entrar nï¿½meros e operadores ou movimentar
+o cursor livremente atravï¿½s de seu teclado ou clicando no teclado virtual da interface.
+Jï¿½ a entrada de variï¿½veis(propriedades) e funï¿½ï¿½es sï¿½ pode ser feita atravï¿½s da interface grï¿½fica.
+O objetivo disso ï¿½ evitar a geraï¿½ï¿½o de cï¿½digos inconsistentes.
 
-Para se inserir funções basta-se clicar no respectivo botão da função no teclado virtual para
-que a função seja inserida na posição corrente do cursor.
+Para se inserir funï¿½ï¿½es basta-se clicar no respectivo botï¿½o da funï¿½ï¿½o no teclado virtual para
+que a funï¿½ï¿½o seja inserida na posiï¿½ï¿½o corrente do cursor.
 
-Para se inserir propriedades é preciso clicar no botão inserir ao lado da lista de timesteps.
+Para se inserir propriedades ï¿½ preciso clicar no botï¿½o inserir ao lado da lista de timesteps.
 O valor inserido depende dos valores das listas e dos toggles. Se nenhum dos toggles estiver
-habilitado, será inserido apenas o nome da propriedade selecionada na lista de propriedades.
-Se o toggle da lista de elementos estiver habilitado, será inserido a propriedade selecionada
+habilitado, serï¿½ inserido apenas o nome da propriedade selecionada na lista de propriedades.
+Se o toggle da lista de elementos estiver habilitado, serï¿½ inserido a propriedade selecionada
 na lista de propriedades indexando o elemento selecionado na lista de elementos
 (exemplo: WELL[BHP]).
-Caso o toggle de timestep esteja habilitado, será adicionado ao fim a data selecionada
+Caso o toggle de timestep esteja habilitado, serï¿½ adicionado ao fim a data selecionada
 na lista de timesteps (exemplo: SO``10/10/2010'').
 
-Para que não haja casos de entrada de números, operadores, funções ou propriedades em 
-posições indesejadas (como por exemplo no meio do nome de uma propriedade) foram implementadas
-algumas funções que controlam o movimento e posição do cursor, evitando cenários desse tipo.
+Para que nï¿½o haja casos de entrada de nï¿½meros, operadores, funï¿½ï¿½es ou propriedades em 
+posiï¿½ï¿½es indesejadas (como por exemplo no meio do nome de uma propriedade) foram implementadas
+algumas funï¿½ï¿½es que controlam o movimento e posiï¿½ï¿½o do cursor, evitando cenï¿½rios desse tipo.
 
-%TODO: nao falei que as listas são preenchidas com vlores referentes ao modelo aberto.
+%TODO: nao falei que as listas sï¿½o preenchidas com vlores referentes ao modelo aberto.
 
-\subsection{Módulo CalcComp.lua}
+\subsection{Mï¿½dulo CalcComp.lua}
 
-Quando se pensa em geração de código para um problema como este, a primeira abordagem que
-nos vem a cabeça é compilar  as expressões e gerar o código desejado a partir delas.
-Porém, compilar códigos, por mais simples que sejam as expressões
-encontradas nesse caso, não é uma tarefa trivial. O desenvolvimento de um mini-compilador 
-envolveria a implementação de um parser,
-a elaboração de uma gramática, o uso de técnicas como criação de árvores de sintaxe
-e etc. Por isso, a abordagem que foi seguida vai praticamente na direção oposta.
-Em vez de compilar as expressões e gerar um código de \script{} a partir delas
+Quando se pensa em geraï¿½ï¿½o de cï¿½digo para um problema como este, a primeira abordagem que
+nos vem a cabeï¿½a ï¿½ compilar  as expressï¿½es e gerar o cï¿½digo desejado a partir delas.
+Porï¿½m, compilar cï¿½digos, por mais simples que sejam as expressï¿½es
+encontradas nesse caso, nï¿½o ï¿½ uma tarefa trivial. O desenvolvimento de um mini-compilador 
+envolveria a implementaï¿½ï¿½o de um parser,
+a elaboraï¿½ï¿½o de uma gramï¿½tica, o uso de tï¿½cnicas como criaï¿½ï¿½o de ï¿½rvores de sintaxe
+e etc. Por isso, a abordagem que foi seguida vai praticamente na direï¿½ï¿½o oposta.
+Em vez de compilar as expressï¿½es e gerar um cï¿½digo de \script{} a partir delas
 , o que fizemos foi adaptar o ambiente do sistema de \script{} 
-para que as próprias expressões pudessem ser executadas dentro desse ambiente
-e gerar o resultado esperado. É por isso que era imprescindível que as
-expressões fossem compatíveis com \textbf{Lua}.
+para que as prï¿½prias expressï¿½es pudessem ser executadas dentro desse ambiente
+e gerar o resultado esperado. ï¿½ por isso que era imprescindï¿½vel que as
+expressï¿½es fossem compatï¿½veis com \textbf{Lua}.
 
-As adaptações são feitas da seguinte maneira: é desempenhada uma iteração sobre
-os identificadores presentes na expressão (nomes de propriedades ou dos demais
-elementos, como nomes de poços), é verificado se o identificador se refere a uma propriedade
-ou a um elemento e então é gerado um código que inicializa uma variável local de mesmo
-nome da propriedade ou elemento com uma chamada de função que retorna um objeto
-especial que possibilite a execução do código da expressão. Essa função recebe como parâmetro
-uma referência para o objeto que representa o modelo de reservatório, um \emph{string}
-indicando o tipo de dado sendo trabalhado (propriedade de mapa, de poço e etc) e um
-\emph{string} contendo o nome da propriedade ou objeto. Além disso, também é gerado
-o código que armazena o resultado da expressão em uma variável temporária e
-o da chamada de função que associa o vetor de dados resultante ao modelo
+As adaptaï¿½ï¿½es sï¿½o feitas da seguinte maneira: ï¿½ desempenhada uma iteraï¿½ï¿½o sobre
+os identificadores presentes na expressï¿½o (nomes de propriedades ou dos demais
+elementos, como nomes de poï¿½os), ï¿½ verificado se o identificador se refere a uma propriedade
+ou a um elemento e entï¿½o ï¿½ gerado um cï¿½digo que inicializa uma variï¿½vel local de mesmo
+nome da propriedade ou elemento com uma chamada de funï¿½ï¿½o que retorna um objeto
+especial que possibilite a execuï¿½ï¿½o do cï¿½digo da expressï¿½o. Essa funï¿½ï¿½o recebe como parï¿½metro
+uma referï¿½ncia para o objeto que representa o modelo de reservatï¿½rio, um \emph{string}
+indicando o tipo de dado sendo trabalhado (propriedade de mapa, de poï¿½o e etc) e um
+\emph{string} contendo o nome da propriedade ou objeto. Alï¿½m disso, tambï¿½m ï¿½ gerado
+o cï¿½digo que armazena o resultado da expressï¿½o em uma variï¿½vel temporï¿½ria e
+o da chamada de funï¿½ï¿½o que associa o vetor de dados resultante ao modelo
 para ser posteriormente visualizado.
 
-Segue abaixo o exemplo de um código gerado pelo módulo para a expressão OIL1[QO] + QW``10/07/1981'':
+Segue abaixo o exemplo de um cï¿½digo gerado pelo mï¿½dulo para a expressï¿½o OIL1[QO] + QW``10/07/1981'':
 
 \begin{verbatim}
   calc.GetMacroEnv()
@@ -493,228 +493,228 @@ Segue abaixo o exemplo de um código gerado pelo módulo para a expressão OIL1[QO]
   calc.AttachProp(rf,temp,'newprop','well')
 \end{verbatim}
 
-Nesse caso, QO e QW são propriedades de poços, OIL1 é o nome de um poço e rf representa
+Nesse caso, QO e QW sï¿½o propriedades de poï¿½os, OIL1 ï¿½ o nome de um poï¿½o e rf representa
 um objeto do tipo \emph{Model}.
 
-A implementação dessas funções e dos objetos retornados por elas será discutida
-na próxima seção.
+A implementaï¿½ï¿½o dessas funï¿½ï¿½es e dos objetos retornados por elas serï¿½ discutida
+na prï¿½xima seï¿½ï¿½o.
 
 %TODO: explicar melhor o teste
-O módulo também disponibiliza uma função que testa a expressão com o intuito de 
-prevenir erros de sintaxe e que funções sejam chamadas sem que seus parâmetros tanham
+O mï¿½dulo tambï¿½m disponibiliza uma funï¿½ï¿½o que testa a expressï¿½o com o intuito de 
+prevenir erros de sintaxe e que funï¿½ï¿½es sejam chamadas sem que seus parï¿½metros tanham
 sido especificados.
 
-%descrição da geração de código.
-%explicar que o código não eh compilado, o que 
-%acontece eh a adicao de algumas linhas de código para
-%que a execução da propria expressao já gere o resultado
+%descriï¿½ï¿½o da geraï¿½ï¿½o de cï¿½digo.
+%explicar que o cï¿½digo nï¿½o eh compilado, o que 
+%acontece eh a adicao de algumas linhas de cï¿½digo para
+%que a execuï¿½ï¿½o da propria expressao jï¿½ gere o resultado
 %esperado.
 
-\subsection{Módulo CalcLib.lua}
+\subsection{Mï¿½dulo CalcLib.lua}
 
-O módulo CalcLib.lua é responsável por implementar as funções presentes
-no código gerado pelo módulo CalcComp.lua. Essas funções servem para
-adaptar o ambiente do sistema de \script{} para que as próprias expressões
+O mï¿½dulo CalcLib.lua ï¿½ responsï¿½vel por implementar as funï¿½ï¿½es presentes
+no cï¿½digo gerado pelo mï¿½dulo CalcComp.lua. Essas funï¿½ï¿½es servem para
+adaptar o ambiente do sistema de \script{} para que as prï¿½prias expressï¿½es
 possam ser executadas dentro desse ambiente e gerar o resultado esperado.
-As funções são armazenadas em uma tabela que é inserida no ambiente de
-\script{} (tabela calc). O principal desafio de implementar esse módulo
+As funï¿½ï¿½es sï¿½o armazenadas em uma tabela que ï¿½ inserida no ambiente de
+\script{} (tabela calc). O principal desafio de implementar esse mï¿½dulo
 foi desenvolver objetos que se comportassem ora como operandos de 
-expressões aritméticas e ora como funções (no caso de propriedades
-com o timestep especificado, que é interpretado em  \textbf{Lua} como uma chamada
-de função). Uma limitação que também teve que ser superada foi a de que,
-em operações aritméticas entre vetores de dados e escalares no sistema de \script{},
+expressï¿½es aritmï¿½ticas e ora como funï¿½ï¿½es (no caso de propriedades
+com o timestep especificado, que ï¿½ interpretado em  \textbf{Lua} como uma chamada
+de funï¿½ï¿½o). Uma limitaï¿½ï¿½o que tambï¿½m teve que ser superada foi a de que,
+em operaï¿½ï¿½es aritmï¿½ticas entre vetores de dados e escalares no sistema de \script{},
 os escalares devem sempre ser o segundo operando.
 
 Para solucionar esses problemas, foi utilizado o recurso de meta-mecanismos
 presente em \textbf{Lua}, que nos permite especificar como determinados objetos devem se
-comportar em algumas situações. Isso é disponibilizado por meio da implementação 
-de \emph{metatables}, que são tabelas que definem através de seus \emph{metamétodos}
+comportar em algumas situaï¿½ï¿½es. Isso ï¿½ disponibilizado por meio da implementaï¿½ï¿½o 
+de \emph{metatables}, que sï¿½o tabelas que definem atravï¿½s de seus \emph{metamï¿½todos}
 como os objetos associados a ela devem se comportar.
 
-Os objetos retornados pela função \emph{CreateProp}, que representam as
-propriedades nas expressões, são tabelas que possuem campos que
+Os objetos retornados pela funï¿½ï¿½o \emph{CreateProp}, que representam as
+propriedades nas expressï¿½es, sï¿½o tabelas que possuem campos que
 especificam o nome da propriedade, o tipo da propriedade e se o valor utilizado
-nos cálculos será a propriedade associada a um determinado elemento ou será
+nos cï¿½lculos serï¿½ a propriedade associada a um determinado elemento ou serï¿½
 o vetor de dados inteiro. Seu comportamento (determinado por sua \emph{metatable})
-é o seguinte: 
+ï¿½ o seguinte: 
 
 \begin{itemize}
-  \item O metamétodo de todas as operações binárias ajusta a ordem dos
-  termos, armazena o resultado da operação em um objeto intermediário
+  \item O metamï¿½todo de todas as operaï¿½ï¿½es binï¿½rias ajusta a ordem dos
+  termos, armazena o resultado da operaï¿½ï¿½o em um objeto intermediï¿½rio
   e o retorna.
-  \item O metamétodo responsável pela situação em que o objeto é chamado 
-  como uma função, armazena a ``fatia'' da propriedade referente ao timestep passado como
-  parâmetro em um objeto intermediário e o retorna.
-  \item O metamétodo responsável pelo tratamento de indexações %inexistentes
-  é o responsável por buscar os vetores de dados que serão usados nos cálculos, por 
-  isso os demais metamétodos acessam esses valores apenas indexando a própria tabela. 
+  \item O metamï¿½todo responsï¿½vel pela situaï¿½ï¿½o em que o objeto ï¿½ chamado 
+  como uma funï¿½ï¿½o, armazena a ``fatia'' da propriedade referente ao timestep passado como
+  parï¿½metro em um objeto intermediï¿½rio e o retorna.
+  \item O metamï¿½todo responsï¿½vel pelo tratamento de indexaï¿½ï¿½es %inexistentes
+  ï¿½ o responsï¿½vel por buscar os vetores de dados que serï¿½o usados nos cï¿½lculos, por 
+  isso os demais metamï¿½todos acessam esses valores apenas indexando a prï¿½pria tabela. 
 \end{itemize}
 
-O objeto intermediário, que é apenas uma tabela que armazena o resultado das operações,
-se mostrou necessário para resolver a limitação da ordem dos termos em operações envolvendo
-escalares citada acima. Ele é associado à mesma \emph{metatable} do objeto que representa as
-propriedades e por isso sempre ajusta a ordem dos termos nas operações.
+O objeto intermediï¿½rio, que ï¿½ apenas uma tabela que armazena o resultado das operaï¿½ï¿½es,
+se mostrou necessï¿½rio para resolver a limitaï¿½ï¿½o da ordem dos termos em operaï¿½ï¿½es envolvendo
+escalares citada acima. Ele ï¿½ associado ï¿½ mesma \emph{metatable} do objeto que representa as
+propriedades e por isso sempre ajusta a ordem dos termos nas operaï¿½ï¿½es.
 
 %TODO: melhorar esse paragrafo
-Os objetos que representam nas expressões os elementos (poços, regiões e etc), 
-são criados pela função \emph{CreateElem}. Eles são tabelas contendo campos
-com o nome do elemento, o seu tipo e uma referência para o modelo que pertence.
-A \emph{metatable} que é associada a eles contém apenas o metamétodo responsável 
-pelo tratamento de indexações. Ao ser indexada por um objeto que representa uma propriedade,
-esse metamétodo extrai o nome da propriedade e cria um novo objeto para mesma preopriedade
-(chamando a função \emph{CreateProp}) porém especificando que a propriedade está 
-associada agora ao elemento. Portanto, o vetor de dados utilizado nos cálculos será
+Os objetos que representam nas expressï¿½es os elementos (poï¿½os, regiï¿½es e etc), 
+sï¿½o criados pela funï¿½ï¿½o \emph{CreateElem}. Eles sï¿½o tabelas contendo campos
+com o nome do elemento, o seu tipo e uma referï¿½ncia para o modelo que pertence.
+A \emph{metatable} que ï¿½ associada a eles contï¿½m apenas o metamï¿½todo responsï¿½vel 
+pelo tratamento de indexaï¿½ï¿½es. Ao ser indexada por um objeto que representa uma propriedade,
+esse metamï¿½todo extrai o nome da propriedade e cria um novo objeto para mesma preopriedade
+(chamando a funï¿½ï¿½o \emph{CreateProp}) porï¿½m especificando que a propriedade estï¿½ 
+associada agora ao elemento. Portanto, o vetor de dados utilizado nos cï¿½lculos serï¿½
 referente a ``fatia'' da propriedade referente a esse elemento.
 
-A função \emph{AttachProp} associa o resultado da expressão ao modelo. 
+A funï¿½ï¿½o \emph{AttachProp} associa o resultado da expressï¿½o ao modelo. 
 
-Este módulo também inplementa as funções disponíveis na interface da calculadora:
+Este mï¿½dulo tambï¿½m inplementa as funï¿½ï¿½es disponï¿½veis na interface da calculadora:
 
 \begin{itemize}
   \item \textbf{max}: retorna o maior valor encontrado dentre os vetores de dados passados como
-  parâmetros.
+  parï¿½metros.
   \item \textbf{min}: retorna o menor valor encontrado dentre os vetores de dados passados como
-  parâmetros.
-  \item \textbf{sum}: retorna o somatório dos valores do vetor de dados.
-  \item \textbf{abs}: retorna um novo vetor de dados de mesma dimensões do vetor passado como
-  parâmetros com os valores sendo igual aos respectivos valores absolutos do vetor original.
-  \item \textbf{sqrt}: retorna um novo vetor de dados de mesma dimensões do vetor passado como
-  parâmetros com os valores sendo igual às respectivas raizes quadradas dos valores do vetor original.
-  \item \textbf{delta}: retorna um novo vetor de dados de mesma dimensões do vetor passado como
-  parâmetros com os valores sendo igual diferença entre posições vizinhas.
+  parï¿½metros.
+  \item \textbf{sum}: retorna o somatï¿½rio dos valores do vetor de dados.
+  \item \textbf{abs}: retorna um novo vetor de dados de mesma dimensï¿½es do vetor passado como
+  parï¿½metros com os valores sendo igual aos respectivos valores absolutos do vetor original.
+  \item \textbf{sqrt}: retorna um novo vetor de dados de mesma dimensï¿½es do vetor passado como
+  parï¿½metros com os valores sendo igual ï¿½s respectivas raizes quadradas dos valores do vetor original.
+  \item \textbf{delta}: retorna um novo vetor de dados de mesma dimensï¿½es do vetor passado como
+  parï¿½metros com os valores sendo igual diferenï¿½a entre posiï¿½ï¿½es vizinhas.
 \end{itemize}
 
-\chapter{Linguagens de Programação Visual}
+\chapter{Linguagens de Programaï¿½ï¿½o Visual}
 
-Ultimamente o uso de ferramentas de programação visual vem crescendo cada vez mais,
-principalmente em aplicações voltadas para áreas da engenharia como \emph{LabVIEW},
+Ultimamente o uso de ferramentas de programaï¿½ï¿½o visual vem crescendo cada vez mais,
+principalmente em aplicaï¿½ï¿½es voltadas para ï¿½reas da engenharia como \emph{LabVIEW},
 \emph{Simulink}, \emph{CircuitMaker} entre outros.
 %Mesmo sem ter apresentado muito sucesso
 Mesmo tendo apresentado relativa dificuldade
-na resolução de problemas de grande porte
-o uso destas ferramentas em sistemas que apresentam um domínio específico,
-como as citadas acima, tem se mostrado bastante interessante pois é possível
-manter-se dentro do estilo de comunicação do domínio utilizando artefatos 
-visuais que reflitam necessidades particulares, diagramas e o vocabulário
-específico do domínio 
-sem nunca precisar deixar esse estilo de comunicação. Além disso,
-linguagens de programação visual costumam ser mais intuitivas e
-de mais fácil aprendizado do que linguagens de programação convencionais.
+na resoluï¿½ï¿½o de problemas de grande porte
+o uso destas ferramentas em sistemas que apresentam um domï¿½nio especï¿½fico,
+como as citadas acima, tem se mostrado bastante interessante pois ï¿½ possï¿½vel
+manter-se dentro do estilo de comunicaï¿½ï¿½o do domï¿½nio utilizando artefatos 
+visuais que reflitam necessidades particulares, diagramas e o vocabulï¿½rio
+especï¿½fico do domï¿½nio 
+sem nunca precisar deixar esse estilo de comunicaï¿½ï¿½o. Alï¿½m disso,
+linguagens de programaï¿½ï¿½o visual costumam ser mais intuitivas e
+de mais fï¿½cil aprendizado do que linguagens de programaï¿½ï¿½o convencionais.
 
 Pelos motivos citados acima, e pela calculadora de propriedades oferecer
-relativamente poucos recursos ao usuário, se mostrou interessante um
-estudo dessas ferramentas de programação visual e investigar se esse
+relativamente poucos recursos ao usuï¿½rio, se mostrou interessante um
+estudo dessas ferramentas de programaï¿½ï¿½o visual e investigar se esse
 tipo de recurso solucionaria o nosso problema.
 
-Dentre os sistemas que utilizam programação visual, o que tem se destacado mais
-é o \emph{LabVIEW (Laboratory Virtual Instrument Engineering Workbench)} [WhNF06], 
-que é um ambiente de programação visual muito usado nos campos de aquisição de 
-dados, controle de instrumentos e automação industrial. 
-Por ser um instrumento amplamente usado por engenheiros em diversas áreas,
-e como esses são os usuários finais do \textbf{Geresim}, essa ferramenta
-se mostra uma interessante fonte de pesquisa e um possível modelo a ser seguido, 
-já que é possível que parte dos usuários finais tenha uma certa experiência
+Dentre os sistemas que utilizam programaï¿½ï¿½o visual, o que tem se destacado mais
+ï¿½ o \emph{LabVIEW (Laboratory Virtual Instrument Engineering Workbench)} [WhNF06], 
+que ï¿½ um ambiente de programaï¿½ï¿½o visual muito usado nos campos de aquisiï¿½ï¿½o de 
+dados, controle de instrumentos e automaï¿½ï¿½o industrial. 
+Por ser um instrumento amplamente usado por engenheiros em diversas ï¿½reas,
+e como esses sï¿½o os usuï¿½rios finais do \textbf{Geresim}, essa ferramenta
+se mostra uma interessante fonte de pesquisa e um possï¿½vel modelo a ser seguido, 
+jï¿½ que ï¿½ possï¿½vel que parte dos usuï¿½rios finais tenha uma certa experiï¿½ncia
 com o \emph{LabVIEW}.
 
-A linguagem de programação do \emph{LabVIEW}, chamada de G, é formada por elementos
-visuais e textuais. Os elementos visuais são basicamente pequenas caixas (que 
-podem representar valores, operadores e chamadas de funções) e linhas que as conectam. 
-Elementos compostos como funções condicionais e de repetição (loop) são representados
-por grandes caixas retangulares cercando o corpo da composição.
+A linguagem de programaï¿½ï¿½o do \emph{LabVIEW}, chamada de G, ï¿½ formada por elementos
+visuais e textuais. Os elementos visuais sï¿½o basicamente pequenas caixas (que 
+podem representar valores, operadores e chamadas de funï¿½ï¿½es) e linhas que as conectam. 
+Elementos compostos como funï¿½ï¿½es condicionais e de repetiï¿½ï¿½o (loop) sï¿½o representados
+por grandes caixas retangulares cercando o corpo da composiï¿½ï¿½o.
 
-A linguagem segue o paradigma de fluxo de dados. O princípio central do paradigma
-é definir a computação como um conjunto de dependências de dados. Um programa 
-escrito nesse paradigma define um grafo de nós operadores (funções) unidos por 
-arcos conectores. Os arcos são as dependências de dados. Assim o paradigma de fluxo
-de dados expressa computação como uma série de transformações nos valores dos dados. 
-Não há conceitos como variáveis, ponteiros e atribuição, o foco está em quais funções 
-serão aplicadas nos valores para produzir o retorno esperado. Outra característica 
-desse paradigma é o paralelismo. A ordem de execução é baseada somente nas dependências
-de dados, o que é relativamente similar ao design de circuitos elétricos.
+A linguagem segue o paradigma de fluxo de dados. O princï¿½pio central do paradigma
+ï¿½ definir a computaï¿½ï¿½o como um conjunto de dependï¿½ncias de dados. Um programa 
+escrito nesse paradigma define um grafo de nï¿½s operadores (funï¿½ï¿½es) unidos por 
+arcos conectores. Os arcos sï¿½o as dependï¿½ncias de dados. Assim o paradigma de fluxo
+de dados expressa computaï¿½ï¿½o como uma sï¿½rie de transformaï¿½ï¿½es nos valores dos dados. 
+Nï¿½o hï¿½ conceitos como variï¿½veis, ponteiros e atribuiï¿½ï¿½o, o foco estï¿½ em quais funï¿½ï¿½es 
+serï¿½o aplicadas nos valores para produzir o retorno esperado. Outra caracterï¿½stica 
+desse paradigma ï¿½ o paralelismo. A ordem de execuï¿½ï¿½o ï¿½ baseada somente nas dependï¿½ncias
+de dados, o que ï¿½ relativamente similar ao design de circuitos elï¿½tricos.
 
-Conceitualmente os programas desenvolvidos no \emph{LabVIEW} são compostos de funções,
+Conceitualmente os programas desenvolvidos no \emph{LabVIEW} sï¿½o compostos de funï¿½ï¿½es,
 que recebem o nome de instrumentos virtuais (VIs).
-O código de um VI consiste basicamente de três elementos: terminais, nós e fios conectores.
-Os elementos terminais são os valores manipulados, podendo ser valores de entrada, saída ou
-valores constantes. Esses elementos são representados por pequenas caixas coloridas com a 
-cor do tipo do terminal (por exemplo, laranja para números). Os nós são operadores, chamados 
-de função e nós estruturais (if-then-else, case, while etc). Operadores e chamadas de função 
-são representados por ícones com etiquetas ou imagens, e os nós estruturais são representados 
-por grandes caixas retangulares que delimitam a composição que deve ser executada dentro 
-da estrutura. Os fios conectores são usados para ligar terminais e nós formando expressões.
+O cï¿½digo de um VI consiste basicamente de trï¿½s elementos: terminais, nï¿½s e fios conectores.
+Os elementos terminais sï¿½o os valores manipulados, podendo ser valores de entrada, saï¿½da ou
+valores constantes. Esses elementos sï¿½o representados por pequenas caixas coloridas com a 
+cor do tipo do terminal (por exemplo, laranja para nï¿½meros). Os nï¿½s sï¿½o operadores, chamados 
+de funï¿½ï¿½o e nï¿½s estruturais (if-then-else, case, while etc). Operadores e chamadas de funï¿½ï¿½o 
+sï¿½o representados por ï¿½cones com etiquetas ou imagens, e os nï¿½s estruturais sï¿½o representados 
+por grandes caixas retangulares que delimitam a composiï¿½ï¿½o que deve ser executada dentro 
+da estrutura. Os fios conectores sï¿½o usados para ligar terminais e nï¿½s formando expressï¿½es.
 
-\chapter{Início da implementação de uma VPL}
+\chapter{Inï¿½cio da implementaï¿½ï¿½o de uma VPL}
 
-Após o estudo de VPLs e e algumas experiências utilizando o \emph{LabVIEW}
-(na matéria Automação Industrial, cursada nesse período), foi iniciada
-a implementação de uma VPL bastante simplificada que segue o paradigma de
-fluxo de dados. Infelizmente não houve tempo suficiente para desenvolver
-mais a ferramenta e por isso a implementação econtra-se em estado inicial.
+Apï¿½s o estudo de VPLs e e algumas experiï¿½ncias utilizando o \emph{LabVIEW}
+(na matï¿½ria Automaï¿½ï¿½o Industrial, cursada nesse perï¿½odo), foi iniciada
+a implementaï¿½ï¿½o de uma VPL bastante simplificada que segue o paradigma de
+fluxo de dados. Infelizmente nï¿½o houve tempo suficiente para desenvolver
+mais a ferramenta e por isso a implementaï¿½ï¿½o econtra-se em estado inicial.
 
-Ao contrário do que foi feito na calculadora de propriedades, inicialmente
-seria implementado algo mais genérico para depois ser especializado para
-o ambiente de pós-processamento do \textbf{Geresim}. A princípio, a linguagem
+Ao contrï¿½rio do que foi feito na calculadora de propriedades, inicialmente
+seria implementado algo mais genï¿½rico para depois ser especializado para
+o ambiente de pï¿½s-processamento do \textbf{Geresim}. A princï¿½pio, a linguagem
 seria composta apenas de blocos e fios conectores que denotariam
-as dependências de  dados entre os blocos. Um bloco poderia ter
-mais de um dado de entrada e mais de um dado de saída.
-Sua compilação geraria um código \textbf{Lua}.
+as dependï¿½ncias de  dados entre os blocos. Um bloco poderia ter
+mais de um dado de entrada e mais de um dado de saï¿½da.
+Sua compilaï¿½ï¿½o geraria um cï¿½digo \textbf{Lua}.
 
-No código gerado, cada bloco seria representado por uma tabela.
-Essa tabela aramzenaria a função associada ao bloco e uma lista
-de objetos parâmetros, que seriam tabelas armazenando uma referência
-a outro bloco e o índice do dado de saída deste outro bloco. 
+No cï¿½digo gerado, cada bloco seria representado por uma tabela.
+Essa tabela aramzenaria a funï¿½ï¿½o associada ao bloco e uma lista
+de objetos parï¿½metros, que seriam tabelas armazenando uma referï¿½ncia
+a outro bloco e o ï¿½ndice do dado de saï¿½da deste outro bloco. 
 Todos os blocos estariam associados a uma \emph{metatable} cujo
-metamétodo de indexação executaria a função do bloco gerando assim
-os dados de saída. Porém, antes de poder executar a função associada
-a este bloco, seria preciso obter todos os parâmetros. E isso seria
-feito iterando a lista de parâmetros e indexando os respectivos
-blocos com os respectivos índices. Caso os dados de saída desses
-demais blocos não estejam disponíveis, o metamétodo de indexação agiria
-então nesses blocos. Logo, recursivamente toda a cadeia de blocos seria
-executada. Dessa maneira, a compilação seria apenas uma iteração sobre os fios
-conectores e a partir deles se geraria a lista de parâmetros de cada bloco.
+metamï¿½todo de indexaï¿½ï¿½o executaria a funï¿½ï¿½o do bloco gerando assim
+os dados de saï¿½da. Porï¿½m, antes de poder executar a funï¿½ï¿½o associada
+a este bloco, seria preciso obter todos os parï¿½metros. E isso seria
+feito iterando a lista de parï¿½metros e indexando os respectivos
+blocos com os respectivos ï¿½ndices. Caso os dados de saï¿½da desses
+demais blocos nï¿½o estejam disponï¿½veis, o metamï¿½todo de indexaï¿½ï¿½o agiria
+entï¿½o nesses blocos. Logo, recursivamente toda a cadeia de blocos seria
+executada. Dessa maneira, a compilaï¿½ï¿½o seria apenas uma iteraï¿½ï¿½o sobre os fios
+conectores e a partir deles se geraria a lista de parï¿½metros de cada bloco.
 
-A partir da base descrita acima, já seria possível implementar um bloco
-que desempenhe a função de um operador condicional e talvez seja
-possível implementar um bloco de iteração.
+A partir da base descrita acima, jï¿½ seria possï¿½vel implementar um bloco
+que desempenhe a funï¿½ï¿½o de um operador condicional e talvez seja
+possï¿½vel implementar um bloco de iteraï¿½ï¿½o.
 
-No atual estágio da implementação é possível manipular os blocos
-com o mouse e conecta-los com os fios conectores. É possível também
-manipular blocos já conectados, fazendo com que os fios conectores se
-redesenhem se ajustando à nova disposição dos blocos.
-Essa implementação foi desenvolvida em \textbf{C}++, utilizando a API gráfica
+No atual estï¿½gio da implementaï¿½ï¿½o ï¿½ possï¿½vel manipular os blocos
+com o mouse e conecta-los com os fios conectores. ï¿½ possï¿½vel tambï¿½m
+manipular blocos jï¿½ conectados, fazendo com que os fios conectores se
+redesenhem se ajustando ï¿½ nova disposiï¿½ï¿½o dos blocos.
+Essa implementaï¿½ï¿½o foi desenvolvida em \textbf{C}++, utilizando a API grï¿½fica
 \emph{OpenGL}.\cite{OpenGl} 
-A parte \textbf{Lua} ainda não foi desenvolvida.
+A parte \textbf{Lua} ainda nï¿½o foi desenvolvida.
 
 
-\chapter{Considerações finais e projetos futuros}
+\chapter{Consideraï¿½ï¿½es finais e projetos futuros}
 
-Neste trabalho foi apresentado um sistema de \script{} de uma aplicação
-voltada para o pós-processamento de simulações de reservatórios de petróleo (\textbf{Geresim})
-e a proposta e implementação de uma ferramenta que disponibilza parte 
-dos recursos  obtidos a partir dos \emph{scripts} à usuários não programadores.
-Essa ferramenta é
-uma calculadora de propriedades que permite que o usuário gere novas 
-propriedades a partir de simples expressões aritméticas desenvolvidas em
-uma interface gráfica similar a uma calculadora comum. A ferramenta
-ainda não foi utilizada por usuários finais, mas já está integrada ao
-sistema e após ser testada e aprovada por outros membros da equipe de desenvolvimento da
-aplicação criou uma boa expectativa em relação ao cumprimento de seu objetivo.
-A ferramenta estará disponível na próxima versão do programa, que
-será lançada em breve.
+Neste trabalho foi apresentado um sistema de \script{} de uma aplicaï¿½ï¿½o
+voltada para o pï¿½s-processamento de simulaï¿½ï¿½es de reservatï¿½rios de petrï¿½leo (\textbf{Geresim})
+e a proposta e implementaï¿½ï¿½o de uma ferramenta que disponibilza parte 
+dos recursos  obtidos a partir dos \emph{scripts} ï¿½ usuï¿½rios nï¿½o programadores.
+Essa ferramenta ï¿½
+uma calculadora de propriedades que permite que o usuï¿½rio gere novas 
+propriedades a partir de simples expressï¿½es aritmï¿½ticas desenvolvidas em
+uma interface grï¿½fica similar a uma calculadora comum. A ferramenta
+ainda nï¿½o foi utilizada por usuï¿½rios finais, mas jï¿½ estï¿½ integrada ao
+sistema e apï¿½s ser testada e aprovada por outros membros da equipe de desenvolvimento da
+aplicaï¿½ï¿½o criou uma boa expectativa em relaï¿½ï¿½o ao cumprimento de seu objetivo.
+A ferramenta estarï¿½ disponï¿½vel na prï¿½xima versï¿½o do programa, que
+serï¿½ lanï¿½ada em breve.
 
-Adicionalmente, foram feitos estudos acerca de linguagens de programação visual.
+Adicionalmente, foram feitos estudos acerca de linguagens de programaï¿½ï¿½o visual.
 Dentre os sistemas que utilizam esse recurso, o que se mostrou mais interessante
-foi o \emph{LabVIEW}, pois é amplamente usado por usuários que apresentam um perfil
-similar aos usuários do \textbf{Geresim}.
-Após esse estudo foi iniciada a 
-implementação de uma VPL bastante simplificada que segue o paradigma de 
-fluxo de dados. Infelizmente não houve tempo suficiente para desenvolver mais 
-a ferramenta e por isso sua finalização passa a ser um projeto para o futuro.
+foi o \emph{LabVIEW}, pois ï¿½ amplamente usado por usuï¿½rios que apresentam um perfil
+similar aos usuï¿½rios do \textbf{Geresim}.
+Apï¿½s esse estudo foi iniciada a 
+implementaï¿½ï¿½o de uma VPL bastante simplificada que segue o paradigma de 
+fluxo de dados. Infelizmente nï¿½o houve tempo suficiente para desenvolver mais 
+a ferramenta e por isso sua finalizaï¿½ï¿½o passa a ser um projeto para o futuro.
 
-Outro projeto futuro é aumentar o escopo de atuação da calculadora
-incluindo as propriedades de completção e incluindo a opção de
-se trabalhar com camadas e seções das propriedades de mapa.
+Outro projeto futuro ï¿½ aumentar o escopo de atuaï¿½ï¿½o da calculadora
+incluindo as propriedades de completï¿½ï¿½o e incluindo a opï¿½ï¿½o de
+se trabalhar com camadas e seï¿½ï¿½es das propriedades de mapa.
 
 \arial
 \bibliography{pf}
@@ -727,7 +727,7 @@ se trabalhar com camadas e seções das propriedades de mapa.
 % %
 % \noindent
 % \begin{tabular}{ll}
-% \mathbb{R} & conjunto dos números reais \\
+% \mathbb{R} & conjunto dos nï¿½meros reais \\
 % \end{tabular}
 %
 %\end{thenotations}
@@ -735,13 +735,13 @@ se trabalhar com camadas e seções das propriedades de mapa.
 
 \appendix
 
-\chapter{Exemplos práticos}
+\chapter{Exemplos prï¿½ticos}
 
-\section{Cálculo da razão gas-oleo (RGO)}
+\section{Cï¿½lculo da razï¿½o gas-oleo (RGO)}
 
-Expressão: QG / QO
+Expressï¿½o: QG / QO
 
-Código gerado:
+Cï¿½digo gerado:
 
 \begin{verbatim}
 calc.GetMacroEnv()
@@ -751,11 +751,11 @@ local RGO = QG /QO
 calc.AttachProp(rf,RGO,'RGO','well')
 \end{verbatim}
 
-\section{Cálculo sedimentos básicos e água (BSW)}
+\section{Cï¿½lculo sedimentos bï¿½sicos e ï¿½gua (BSW)}
 
-Expressão: QW /(QW + QO )
+Expressï¿½o: QW /(QW + QO )
 
-Código gerado:
+Cï¿½digo gerado:
 
 \begin{verbatim}
 calc.GetMacroEnv()
@@ -765,11 +765,11 @@ local BSW = QW /(QW + QO )
 calc.AttachProp(rf,BSW,'BSW','well')
 \end{verbatim}
 
-\section{Cálculo do volume de óleo em condições de reservatório}
+\section{Cï¿½lculo do volume de ï¿½leo em condiï¿½ï¿½es de reservatï¿½rio}
 
-Expressão: H * PHI * SO * DX * DY
+Expressï¿½o: H * PHI * SO * DX * DY
 
-Código gerado:
+Cï¿½digo gerado:
 
 \begin{verbatim}
   calc.GetMacroEnv()
@@ -788,8 +788,8 @@ Código gerado:
    %\includegraphics*[width=\linewidth]{calc1.PNG}
    %\includegraphics[width=2cm]{vis1.JPG}
    \includegraphics[bb= 0 0 523 348,width=\textwidth]{vis4.JPG}
-   \caption{Exemplo de visualização}
-   %\label{visualização}
+   \caption{Exemplo de visualizaï¿½ï¿½o}
+   %\label{visualizaï¿½ï¿½o}
  \end{figure}
 
 

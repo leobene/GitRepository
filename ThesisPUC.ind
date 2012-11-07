@@ -1,0 +1,176 @@
+\begin{theindex}
+
+  \item \texttt  {\textlatin  {\LaTeX  }}, \hyperpage{1}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax abstract}, \hyperpage{8}
+  \item \texttt  {\char '134\relax abstractuk}, \hyperpage{8}
+  \item \texttt  {\char '134\relax acknowledgment}, \hyperpage{7}
+  \item \texttt  {\char '134\relax advisor}, \hyperpage{6}
+  \item \texttt  {\char '134\relax advisorInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax advisorR}, \hyperpage{6}
+  \item \texttt  {\char '134\relax agradecimentos}, \hyperpage{7}
+  \item \texttt  {\char '134\relax american}, \hyperpage{5}
+  \item \texttt  {\char '134\relax ano}, \hyperpage{6}
+  \item \texttt  {\char '134\relax author}, \hyperpage{5}
+  \item \texttt  {\char '134\relax authorR}, \hyperpage{5}
+  \item \texttt  {\char '134\relax autor}, \hyperpage{5}
+  \item \texttt  {\char '134\relax autorR}, \hyperpage{5}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax banca}, \hyperpage{7}
+  \item \texttt  {\char '134\relax brasil}, \hyperpage{5}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax CDD}, \hyperpage{6}
+  \item \texttt  {\char '134\relax centro}, \hyperpage{6}
+  \item \texttt  {\char '134\relax chave}, \hyperpage{7, 8}
+  \item \texttt  {\char '134\relax chaves}, \hyperpage{7}
+  \item \texttt  {\char '134\relax chavesuk}, \hyperpage{8}
+  \item \texttt  {\char '134\relax cidade}, \hyperpage{7}
+  \item \texttt  {\char '134\relax city}, \hyperpage{7}
+  \item \texttt  {\char '134\relax coadvisor}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorII}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorIII}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorIIIInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorIIInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorIIIR}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorIIR}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coadvisorR}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coordenador}, \hyperpage{7}
+  \item \texttt  {\char '134\relax coorientador}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorII}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorIII}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorIIIInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorIIInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorIIIR}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorIIR}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax coorientadorR}, \hyperpage{6}
+  \item \texttt  {CTAN}, \hyperpage{1}
+  \item \texttt  {\char '134\relax curriculo}, \hyperpage{7}
+
+  \indexspace
+
+  \item \texttt  {dados bibliogr\'{a}ficos}, \hyperpage{2}, 
+		\hyperpage{5}
+  \item \texttt  {\char '134\relax day}, \hyperpage{6}
+  \item \texttt  {\char '134\relax dedication}, \hyperpage{7}
+  \item \texttt  {\char '134\relax dedicatoria}, \hyperpage{7}
+  \item \texttt  {\char '134\relax departamento}, \hyperpage{6}
+  \item \texttt  {\char '134\relax department}, \hyperpage{6}
+  \item \texttt  {\char '134\relax dia}, \hyperpage{6}
+  \item \texttt  {\char '134\relax dissertacao}, \hyperpage{5}
+  \item \texttt  {\char '134\relax doutorado}, \hyperpage{5}
+  \item \texttt  {\char '134\relax dvipdfm}, \hyperpage{2}
+  \item \texttt  {dvipdfm}, \hyperpage{1}
+
+  \indexspace
+
+  \item \texttt  {Elementos Pr\'{e}--Textuais}, \hyperpage{3}, 
+		\hyperpage{7}
+  \item \texttt  {\char '134\relax english}, \hyperpage{5}
+  \item \texttt  {\char '134\relax epigrafe}, \hyperpage{8}
+  \item \texttt  {\char '134\relax epigrafeautor}, \hyperpage{8}
+  \item \texttt  {\char '134\relax epigrafelivro}, \hyperpage{8}
+  \item \texttt  {\char '134\relax epigraph}, \hyperpage{8}
+  \item \texttt  {\char '134\relax epigraphauthor}, \hyperpage{8}
+  \item \texttt  {\char '134\relax epigraphbook}, \hyperpage{8}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax french}, \hyperpage{5}
+  \item \texttt  {\char '134\relax frenteverso}, \hyperpage{5}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax german}, \hyperpage{5}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax html}, \hyperpage{2}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax jury}, \hyperpage{7}
+  \item \texttt  {\char '134\relax jurymember}, \hyperpage{7}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax key}, \hyperpage{7, 8}
+  \item \texttt  {\char '134\relax keys}, \hyperpage{7}
+  \item \texttt  {\char '134\relax keysuk}, \hyperpage{8}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax membrodabanca}, \hyperpage{7}
+  \item \texttt  {\char '134\relax mes}, \hyperpage{6}
+  \item \texttt  {\char '134\relax mestrado}, \hyperpage{5}
+  \item \texttt  {MiKTeX}, \hyperpage{1}
+  \item \texttt  {\char '134\relax modelo1}, \hyperpage{5}
+  \item \texttt  {\char '134\relax modelo2}, \hyperpage{5}
+  \item \texttt  {\char '134\relax modotabelas}, \hyperpage{8}
+  \item \texttt  {\char '134\relax month}, \hyperpage{6}
+  \item \texttt  {\char '134\relax MS Word}, \hyperpage{2}
+  \item \texttt  {\char '134\relax msc}, \hyperpage{5}
+
+  \indexspace
+
+  \item \texttt  {Op\c {c}\~{o}es do pacote}, \hyperpage{2}, 
+		\hyperpage{5}
+  \item \texttt  {\char '134\relax orientador}, \hyperpage{5}
+  \item \texttt  {\char '134\relax orientadorInst}, \hyperpage{6}
+  \item \texttt  {\char '134\relax orientadorR}, \hyperpage{6}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax PDF}, \hyperpage{2}
+  \item \texttt  {\char '134\relax phd}, \hyperpage{5}
+  \item \texttt  {\char '134\relax portuguese}, \hyperpage{5}
+  \item \texttt  {\char '134\relax program}, \hyperpage{6}
+  \item \texttt  {\char '134\relax programa}, \hyperpage{6}
+
+  \indexspace
+
+  \item \texttt  {refer\^{e}ncias}, \hyperpage{1}
+  \item \texttt  {\char '134\relax report}, \hyperpage{2}
+  \item \texttt  {\char '134\relax resume}, \hyperpage{7}
+  \item \texttt  {\char '134\relax resumo}, \hyperpage{7}
+  \item \texttt  {\char '134\relax resumouk}, \hyperpage{8}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax school}, \hyperpage{6}
+  \item \texttt  {\char '134\relax schoolhead}, \hyperpage{7}
+  \item \texttt  {\char '134\relax subtitle}, \hyperpage{6}
+  \item \texttt  {\char '134\relax subtitulo}, \hyperpage{6}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax tablesmode}, \hyperpage{8}
+  \item \texttt  {\char '134\relax tese}, \hyperpage{5}
+  \item \texttt  {\char '134\relax tight}, \hyperpage{5}
+  \item \texttt  {\char '134\relax title}, \hyperpage{6}
+  \item \texttt  {\char '134\relax titulo}, \hyperpage{6}
+  \item \texttt  {\char '134\relax titulouk}, \hyperpage{8}
+  \item \texttt  {\char '134\relax twoside}, \hyperpage{5}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax uni}, \hyperpage{7}
+  \item \texttt  {\char '134\relax universidade}, \hyperpage{7}
+  \item \texttt  {\char '134\relax university}, \hyperpage{7}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax wide}, \hyperpage{5}
+
+  \indexspace
+
+  \item \texttt  {\char '134\relax year}, \hyperpage{6}
+
+\end{theindex}
