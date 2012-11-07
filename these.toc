@@ -1,0 +1,6 @@
+\select@language {brazil}
+\select@language {british}
+\select@language {british}
+\select@language {brazil}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{9}{chapter.1}
+\contentsline {chapter}{Refer\^{e}ncias Bibliogr\'{a}ficas}{10}{chapter*.1}

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=latex 2012.11.6)  7 NOV 2012 16:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=latex 2012.11.6)  7 NOV 2012 16:48
 entering extended mode
-**thesispucLeo.tex
-(C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.tex
+**these.tex
+(C:\Users\Leonardo\Documents\GitRepository\these.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -358,50 +358,50 @@ File: ttlkeys.def 2002/03/27
 )
 \c@definition=\count107
 )
-(C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
+(C:\Users\Leonardo\Documents\GitRepository\these.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 110.
+(lastpage)             ! on input line 99.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 110.
+Package hyperref Info: Link coloring OFF on input line 99.
 
 (C:\Users\Leonardo\Documents\GitRepository\nameref.sty
 Package: nameref 2001/01/27 v2.19 Cross-referencing by name of section
 \c@section@level=\count108
 )
-LaTeX Info: Redefining \ref on input line 110.
-LaTeX Info: Redefining \pageref on input line 110.
-LaTeX Info: Redefining \nameref on input line 110.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
 
-(C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.out)
-(C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.out)
+(C:\Users\Leonardo\Documents\GitRepository\these.out)
+(C:\Users\Leonardo\Documents\GitRepository\these.out)
 \@outlinefile=\write3
 File: puc.ps Graphic file (type eps)
  <puc.ps>
-LaTeX Font Info:    Try loading font information for U+msa on input line 110.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 110.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -415,18 +415,14 @@ File: puc.ps Graphic file (type eps)
 ]
 \c@keycount=\count109
 
-Underfull \hbox (badness 3229) in paragraph at lines 110--110
-[]| \OT1/cmss/m/n/12 1. In-formatica -- Tese. 2. Lin-guagem visual, Pro-
- []
 
-
-Package hyperref Warning: Ignoring empty anchor on input line 110.
+Package hyperref Warning: Ignoring empty anchor on input line 99.
 
 ! Undefined control sequence.
 \puc@showfrontmatter ...{}\puc@showacknowledgment 
                                                   \puc@showabstract \puc@sho...
-l.110 \begin{document}
-                      
+l.99 \begin{document}
+                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -439,29 +435,17 @@ and I'll forget about whatever was undefined.
 
 ] [5
 
-] (C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.toc
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 5.
-LaTeX Font Info:    No file OMScmss.fd. on input line 5.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textsection' on input line 5.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/ui' in size <12> not available
-(Font)              Font shape `OT1/cmr/m/ui' tried instead on input line 5.
-
-)
+] (C:\Users\Leonardo\Documents\GitRepository\these.toc)
 \tf@toc=\write4
  [6
 
-] (C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.lof)
+]
+(C:\Users\Leonardo\Documents\GitRepository\these.lof)
 \tf@lof=\write5
  [7
 
 ]
-(C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.lot)
+(C:\Users\Leonardo\Documents\GitRepository\these.lot)
 \tf@lot=\write6
  [8
 
@@ -470,167 +454,38 @@ Cap\'{\i }tulo 1.
 (C:\Users\Leonardo\Documents\GitRepository\noaccent.def
 File: noaccent.def 2003/11/25 v0.1 Input encoding file 
 )
-
-LaTeX Font Warning: Font shape `OMS/cmss/bx/n' undefined
-(Font)              using `OMS/cmss/m/n' instead
-(Font)              for symbol `textsection' on input line 112.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/ui' in size <14.4> not available
-(Font)              Font shape `OT1/cmr/bx/ui' tried instead on input line 112.
-
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/ui' in size <14.4> not available
-(Font)              Font shape `OT1/cmr/m/ui' tried instead on input line 112.
-
-[9
-
-]
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/sl' undefined
-(Font)              using `OMS/cmss/m/n' instead
-(Font)              for symbol `textsection' on input line 159.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 159.
-
-
-
-Package Fancyhdr Warning: \headheight is too small (14.5pt): 
- Make it at least 15.4552pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10]
-Cap\'{\i }tulo 2.
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [11
-
-]
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [12]
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [13]
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [14] [15]
-Cap\'{\i }tulo 3.
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [16
-
-]
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-File: calc1.JPG Graphic file (type eps)
- <calc1.JPG> [17]
-Underfull \hbox (badness 1472) in paragraph at lines 434--438
-[][]\OT1/cmr/m/n/12 A in-ter-face fun-ci-ona da se-guinte forma: o usu?`$[]$r
-io pode en-trar
- []
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 451--454
-[][]\OT1/cmr/m/n/12 Para que n?`$[]$o haja ca-sos de en-trada de n?`$[]$mer
-os, ope-ra-do-res,
- []
-
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [18] [19]
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-Underfull \hbox (badness 1028) in paragraph at lines 528--533
-[][]\OT1/cmr/m/n/12 Para so-lu-ci-o-nar es-ses pro-ble-mas, foi uti-li-zado o r
-e-curso de meta-
- []
-
-[20] [21] [22]
-Cap\'{\i }tulo 4.
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [23
-
-] [24]
-Cap\'{\i }tulo 5.
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [25
-
-] [26]
-Cap\'{\i }tulo 6.
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-(C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.bbl
-(C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.brf)
+(C:\Users\Leonardo\Documents\GitRepository\these.bbl
+(C:\Users\Leonardo\Documents\GitRepository\these.brf)
 \tf@brf=\write7
- [27
+ [9
 
 ]
 (C:\Users\Leonardo\Documents\GitRepository\noaccent.def
 File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)) [28
-
-]
-Ap\^endice A.
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-)
-(C:\Users\Leonardo\Documents\GitRepository\noaccent.def
-File: noaccent.def 2003/11/25 v0.1 Input encoding file 
-) [29
-
-]
-File: vis4.JPG Graphic file (type eps)
- <vis4.JPG>
+))
 
 AED: lastpage setting LastPage
-[30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 797.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 797.
- (C:\Users\Leonardo\Documents\GitRepository\thesispucLeo.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 797.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 797.
-Package rerunfilecheck Info: File `thesispucLeo.out' has not changed.
-(rerunfilecheck)             Checksum: 26915F2F5BB1CFAD055D3E42F9C73851;1688.
-Package rerunfilecheck Info: File `thesispucLeo.brf' has not changed.
-(rerunfilecheck)             Checksum: 8A00D603675B251D4897CAE564929928;288.
+[10
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 797.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
+ (C:\Users\Leonardo\Documents\GitRepository\these.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
+Package rerunfilecheck Info: File `these.out' has not changed.
+(rerunfilecheck)             Checksum: 81A23F0AD1E1D75F523B803345E9D7FA;347.
+Package rerunfilecheck Info: File `these.brf' has not changed.
+(rerunfilecheck)             Checksum: C13DE988EDC97FFD75606F66F5E3C911;39.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 6155 strings out of 494046
- 91730 string characters out of 3148401
- 195864 words of memory out of 3000000
- 9311 multiletter control sequences out of 15000+200000
- 15108 words of font info for 58 fonts, out of 3000000 for 9000
+ 6011 strings out of 494046
+ 87870 string characters out of 3148401
+ 180853 words of memory out of 3000000
+ 9214 multiletter control sequences out of 15000+200000
+ 10697 words of font info for 40 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 39i,12n,45p,977b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,11n,45p,427b,613s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesispucLeo.dvi (30 pages, 135104 bytes).
+Output written on these.dvi (10 pages, 10500 bytes).

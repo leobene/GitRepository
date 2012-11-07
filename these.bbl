@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}  \addcontentsline{toc}{chapter}{Refer\^{e}ncias
+  Bibliogr\'{a}ficas} \arial\markboth{\bibname}{\bibname}
+
+\bibitem[Ieru03]{Ieru03}
+\MakeUppercase{Ierusalimschy, R.\/}.
+\newblock {\bf Programming in Lua}.
+\newblock Lua.org, Rio de Janeiro, 2003.
+
+\bibitem[Johnson04]{Johnson:2004:VH:993936}
+\MakeUppercase{Johnson, C.; Hansen, C.\/}.
+\newblock {\bf Visualization Handbook}.
+\newblock Academic Press, Inc., Orlando, FL, USA, 2004.
+
+\bibitem[Tecg06]{Tecg06}
+\MakeUppercase{Tecgraf\/}.
+\newblock {\bf Manual do geresim}, 2006.
+
+\end{thebibliography}

@@ -1,14 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesispucLeo.aux
 The style file: ThesisPUC.bst
-I couldn't open database file pf.bib
----line 89 of file thesispucLeo.aux
- : \bibdata{pf
- :            }
-I'm skipping whatever remains of this command
-I found no database files---while reading file thesispucLeo.aux
-Warning--I didn't find a database entry for "Tecg06"
-Warning--I didn't find a database entry for "Ieru03"
-Warning--I didn't find a database entry for "Lua"
-Warning--I didn't find a database entry for "IUP"
-Warning--I didn't find a database entry for "OpenGl"
-(There were 2 error messages)
+Database file #1: thesispucLeo.bib
+Too many commas in name 1 of "Mason Woo, Jackie Neider, Tom Davis, Dave Shreiner" for entry OpenGl
+while executing---line 966 of file ThesisPUC.bst
+(There was 1 error message)

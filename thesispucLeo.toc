@@ -2,7 +2,7 @@
 \select@language {british}
 \select@language {british}
 \select@language {brazil}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\"\i }\IeC {\textquestiondown }\IeC {\textonehalf }\IeC {\"\i }\IeC {\textquestiondown }\IeC {\textonehalf }o}{9}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introdu\~A\IeC {\S }\~A\IeC {\pounds }o}{9}{chapter.1}
 \contentsline {chapter}{\numberline {2}O sistema de Scripts}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Lua}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Conceitos b\IeC {\"\i }\IeC {\textquestiondown }\IeC {\textonehalf }sicos do sistema de Script}{12}{section.2.2}

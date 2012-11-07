@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}  \addcontentsline{toc}{chapter}{Refer\^{e}ncias
+  Bibliogr\'{a}ficas} \arial\markboth{\bibname}{\bibname}
+
+\bibitem[IUP]{IUP}
+\url{http://www.tecgraf.puc-rio.br/iup/}.
+
+\bibitem[Ieru03]{Ieru03}
+\MakeUppercase{Ierusalimschy, R.\/}.
+\newblock {\bf Programming in Lua}.
+\newblock Lua.org, Rio de Janeiro, 2003.
+
+\bibitem[Lua]{Lua}
+\url{http://www.lua.org}.
+
+\bibitem[OpenGl]{OpenGl}
+\MakeUppercase{Mason~Woo, Jackie~Neider, T. D. D.~S.\/}.
+\newblock {\bf OpenGL Programming Guide}.
+\newblock Addison-Wesley, Reading, Massachusetts, 6 edition, 2008.
+
+\bibitem[Tecg06]{Tecg06}
+\MakeUppercase{Tecgraf\/}.
+\newblock {\bf Manual do geresim}, 2006.
+
+\end{thebibliography}
